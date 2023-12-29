@@ -1,0 +1,41 @@
+# common configuration
+
+server:
+   port: 8888
+
+management:
+   endpoint:
+      gateway:
+         enabled: true    # default value
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+
+spring:
+
+   cloud:
+      gateway:
+         globalcors:
+            cors-configurations:
+               '[/**]':
+                  allowedOrigins: '*'
+                  allowedHeaders: '*'
+                  allowedMethods:
+                  - GET
+                  - POST
+                  - PUT
+                  - DELETE
+                  - OPTIONS                   
+      
+         discovery.locator:
+            enabled: true
+            lowerCaseServiceId: true
+         routes:
+         
+         - id: service-potential
+           uri: lb://service-potential
+           predicates:
+           - Path=/api/**
+           filters:
+           - RewritePath=/?(?<remaining>.*), /$\{remaining}
