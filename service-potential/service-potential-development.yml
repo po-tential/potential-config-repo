@@ -29,11 +29,12 @@ logging:
    pattern:
       console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n"
    level:
-      root: INFO
+      root: DEBUG
 
 eureka:
    instance:
       preferIpAddress: true
+      ip-address: 54.238.25.119
    client:
       fetchRegistry: true
       registerWithEureka: true
