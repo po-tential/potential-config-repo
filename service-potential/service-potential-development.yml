@@ -34,7 +34,7 @@ logging:
 eureka:
    instance:
       preferIpAddress: true
-      ip-address: 35.77.201.177
+      ip-address: http://potential-loadbalancer-171085408.ap-northeast-1.elb.amazonaws.com:8085
    client:
       fetchRegistry: true
       registerWithEureka: true
