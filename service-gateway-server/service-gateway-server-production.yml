@@ -23,4 +23,4 @@ eureka:
       registerWithEureka: false
       fetchRegistry: true
       serviceUrl:
-         defaultZone: http://potential-loadbalancer-171085408.ap-northeast-1.elb.amazonaws.com:8761/eureka
+         defaultZone: http://po-tential.site:8761/eureka
