@@ -22,7 +22,7 @@ spring:
       oauth2:
          resourceserver:
            jwt:
-              issuer-uri: http://po-tential.site:5555/realms/potential
+              issuer-uri: http://keycloak.po-tential.site/realms/potential
               jwk-set-uri: ${spring.security.oauth2.resource-server.jwt.issuer-uri}/protocol/openid-connect/certs   
 
 logging:
@@ -38,5 +38,5 @@ eureka:
       fetchRegistry: true
       registerWithEureka: true
       serviceUrl:
-         defaultZone: http://po-tential.site:8761/eureka
+         defaultZone: http://eureka.po-tential.site
    
