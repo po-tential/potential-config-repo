@@ -22,7 +22,7 @@ spring:
       oauth2:
          resourceserver:
            jwt:
-              issuer-uri: http//localhost:5555/realms/potential
+              issuer-uri: http://localhost:5555/realms/potential
               jwk-set-uri: ${spring.security.oauth2.resource-server.jwt.issuer-uri}/protocol/openid-connect/certs   
 
 logging:
