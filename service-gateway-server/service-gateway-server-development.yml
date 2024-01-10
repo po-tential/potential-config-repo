@@ -16,4 +16,4 @@ eureka:
       registerWithEureka: false
       fetchRegistry: true
       serviceUrl:
-         defaultZone: http://eureka.po-tential.site/eureka
+         defaultZone: https://eureka.po-tential.site/eureka
