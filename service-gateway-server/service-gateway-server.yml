@@ -13,7 +13,6 @@ management:
             include: "*"
 
 spring:
-
    cloud:
       gateway:
          globalcors:
