@@ -24,7 +24,7 @@ logging:
    file:
       name: logs/${spring.application.name}.log
    level:
-      root: WARN
+      root: INFO
       com:
          poscodx:
             msa:
